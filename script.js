@@ -1,17 +1,14 @@
 // 1. Import the all three objects (Song, Musician, Playlist) that you created in the MusicData.js module file
-
+import {Song} from "./MusicData.js";
+import {Musician} from "./MusicData.js";
+import {Playlist} from "./MusicData.js";
 
 // 2. declare a new constant and assign to it a new musician object to describe the musician for the first song.
-
-
-
 // 3. declare a new constant and assign to it a new musician object to describe the musician for the second song.
-
-
-
-
 // 4. declare a new constant and assign to it a new musician object to describe the musician for the third song.
-
+const johnnyJewel = new Musician ("Johnny Jewel", "Synthesizers", "techno");
+const niaArchives = new Musician ("Nia Archives", "Synthesizers", "breakbeat")
+const porridgeRadio = new Musician ("Porridge Radio", "Guitar", "Rock")
 
 // 5. declare a new constant and assign to it a new Song object to describe the first song
 // (make sure to use the Musician object from step 2 in creating this Song object
