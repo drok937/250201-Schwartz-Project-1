@@ -8,50 +8,48 @@ class Song {
         this.title = title;
         this.artist = artist;
         this.album = album;
-    }
+    };
 
-}
+};
 //2. Declare a class called Musician, it's constructor should take three parameters: name, instrument, genre
 
 class Musician {
-    constructor(name, instrument, genre){
-
+constructor(name, instrument, genre) {
     this.name = name;
-    this. instrument = instrument;
-    this. genre = genre;
-    }
- }
+    this.instrument = instrument;
+    this.genre = genre;
+    };
+ };
 
 
 
 //3. Declare a class called Playlist, it's constructor should take four parameters: name, song1, song2, song3, song4
 
 class Playlist {
-    constructor(name, song1, song2, song3, song4) {
-        this.title = name;
+    constructor(name, song1, song2, song3) {
+        this.pltitle = name;
         this.song1 = song1;
         this.song2 = song2;
         this.song3 = song3;
-        this.song4 = song4;
-    }
-}
+      //  this.song4 = song4;
+    };
+
 //4. this class should also define a method called getInfo() that prints text to the console saying
 //  The playlist (whatever name you gave it) has the following songs:
 //         (Song1 name) by (Song1 Artist Name),
 //         (Song2 name) by (Song2 Artist Name),
 //         (Song3 name) by (Song3 Artist Name),
 
-WebGLActiveInfo() [
-    console.log(`The playlist ${this.title} has the following songs:/n
-        ${this.song1} by ${this.name1}/n,/n
-        ${this.song2},by ${this.name2}/n
-        ${this.song3},by ${this.name3}/n
-        ${this.song4},by ${this.name4}`
-        )
-]
-
+getInfo() {
+    console.log(`The playlist ${this.pltitle} has the following songs:\n
+        ${this.song1.title} by ${this.song1.artist.name}\n
+        ${this.song2.title} by ${this.song2.artist.name}\n
+        ${this.song3.title} by ${this.song3.artist.name}`
+        );
+    };
+};
 //5. export all three classes to make them available to the other JS files.
-export {Song};
-export {Musician};
-export {Playlist};
+export { Song } ;
+export { Musician };
+export { Playlist };
 
